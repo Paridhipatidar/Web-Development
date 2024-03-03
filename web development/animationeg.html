@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+
+    <style>
+        /* Apply initial styles to the div */
+        .animated-div {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: customAnimation 10s ;
+        }
+
+        /* Define the keyframes for the animation */
+        @keyframes customAnimation {
+            0% {
+                background-color: red;
+                transform: scale(1);
+            }
+            100% {
+                background-color: green;
+                transform: scale(2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The div to be animated -->
+    <div class="animated-div"></div>
+
+</body>
+</html>
+<!--The .animated-div class sets the initial position, size, and background color of the div. The animation property is used to apply the customAnimation keyframes with a duration of 10 seconds, easing function ease-in-out, and the forwards value to keep the final state after the animation finishes.
+
+The @keyframes customAnimation rule defines the keyframes for the animation. At 0%, the background color is red, and the scale (size) is 1. At 100%, the background color changes to green, and the scale is doubled.
+
+This will create an animation where the background color changes from red to green, and the size of the div doubles over the course of 10 seconds. Feel free to adjust the duration, easing function, or other styles to suit your preferences.
+-->
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Assignment Q21</title>
+ <style>
+ .box{
+ width: 60%;
+ height: auto;
+ margin: auto;
+ border-radius: 10px;
+ padding: 5px;
+ border:1px solid;
+ font-weight: bold;
+ color: rgb(0, 0, 0);
+ background: grey;
+ }
+ .row{
+ margin: 5px auto;
+ }
+ .btn-box{
+ align-items: center;
+ text-align: center;
+ 
+ }
+ .btn{
+ margin: 5px 5px;
+ }
+ .box2{
+ width: 60%;
+ height: auto;
+ margin: auto;
+ margin-top: 5px;
+ border: 1px solid ;
+ border-radius: 10px;
+ padding: 5px;
+ font-weight: bold;
+ color: rgb(0, 0, 0);
+ background: grey;
+ }
+ </style>
+ <script>
+ function calsi(){
+ var pa = document.getElementById('pa').value;
+ var roi = document.getElementById('roi').value;
+ var time = document.getElementById('time').value;
+ var si = (pa*roi*time)/100;
+ document.getElementById('PA').innerHTML = pa;
+ document.getElementById('ROI').innerHTML = roi;
+ document.getElementById('Time').innerHTML = time;
+ document.getElementById('SI').innerHTML = si;
+ 
+ }
+ function hide(){
+ pa.value = "";
+ roi.value = "";
+ time.value = "";
+ si = 0;
+ document.getElementById('PA').innerHTML = '0';
+ document.getElementById('ROI').innerHTML = '0';
+ document.getElementById('Time').innerHTML = '0';
+ document.getElementById('SI').innerHTML = '0';
+ 
+ }
+ </script>
+</head>
+<body class="container">
+ <div class="box">
+ <form>
+ <div class="row">
+ <div class="col-4">
+ <label>Principal Amount : </label>
+ </div>
+ <div class="col-8">
+ <input type="text" class="form-control" id="pa" placeholder="Enter Principal 
+Amount">
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-4">
+ <label>Rate Of Interest : </label>
+ </div>
+ <div class="col-8">
+ <input type="text" class="form-control" id="roi" placeholder="Enter Rate Of 
+Interest">
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-4">
+ <label>Time In Year : </label>
+ </div>
+ <div class="col-8">
+ <input type="text" class="form-control" id="time" placeholder="Enter Time">
+ </div>
+ </div>
+ <div class="btn-box">
+ <button type="button" class="btn btn-success" onclick="calsi()">Calculate Simple 
+Interest</button>
+ <button type="button" class="btn btn-primary" onclick="hide()">clear</button>
+ </div>
+ </form>
+ </div>
+ <div class="box2">
+ <div class="row">
+ <div class="col-4">
+ <label>Principal Amount : </label>
+ </div>
+ <div class="col-8">
+ <div id="PA"></div>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-4">
+ <label>Rate Of Interest : </label>
+ </div>
+ <div>
+ <div id="ROI"></div>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-4">
+ <label>Time In Year : </label>
+ </div>
+ <div class="col-8">
+ <div id="Time"></div>
+ </div>
+ </div>
+ <div class="row">
+ <div>
+ <label>Simple Interest : </label>
+ </div>
+ <div>
+ <div id="SI"></div>
+ </div>
+ </div>
+ </div>
+</body>
+</html

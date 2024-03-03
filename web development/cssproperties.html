@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Properties Test</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3m;
+    }
+    .box:hover {
+      transform: rotate(30deg);
+    }
+    .animated-box {
+      animation: moveUpDown 2s infinite;
+    }
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(20px);
+      }
+    }
+    .shadow-box {
+      box-shadow: 40px 4px 10px 0px rgba(245, 2, 2, 0.932);
+    }
+   /* .gradient-box {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+    }*/
+  </style>
+</head>
+<body>
+  <div class="box">Hover me</div>
+  <div class="box animated-box">Animated</div>
+  <div class="box shadow-box">Box Shadow</div>
+  <div class="box gradient-box">Gradient Background</div>
+</body>
+</html>
+<!--This HTML file includes four boxes with different styles:
+
+The first box has a hover effect using the transform property.
+The second box has a continuous animation using the animation property.
+The third box has a box shadow using the box-shadow property.
+The fourth box has a gradient background using the linear-gradient property.
+Feel free to modify the styles and experiment with different CSS properties to see how they affect the appearance and behavior of the elements.
+-->
+
+
+
+

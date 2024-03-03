@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assingnment Q16</title>
+    <style>
+        .time {
+            background-color: grey;
+            color: black;
+            width: 400px;
+            height:50px;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function Get() {
+            var now = new Date();
+            document.getElementById('timer').innerHTML = now.toLocaleTimeString();
+        }
+        function f1() {
+            setInterval(Get, 1000);
+        } 
+    </script>
+</head>
+
+<body onload="f1()">
+    <center>
+        <div class="time">
+            <div>Current Time Is</div>
+            <div id="timer"></div>
+        </div>
+    </center>
+</body>
+
+</html>
+<!--What is toLocaleString in JavaScript time?
+The toLocaleTimeString() method of Date instances returns a string with a language-sensitive representation of the time portion of the date. In implementations with Intl.DateTimeFormat API support, this method simply calls Intl.DateTimeFormat .-->

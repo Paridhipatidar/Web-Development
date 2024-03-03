@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Departments</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+
+        #menu-column {
+            width: 20%;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #content-column {
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div id="menu-column">
+    <h2>University Departments</h2>
+    <ul>
+     <li><a href="iips.html" target="content-frame">IIPS</a></li>
+        <li><a href="ims.html" target="content-frame">IMS</a></li>
+         Add more departments as needed 
+    </ul>
+</div>
+
+<div id="content-column">
+    <iframe name="content-frame" frameborder="0"></iframe>
+</div>
+

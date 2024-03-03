@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Properties Example</title>
+
+    <style>
+        /* Example of transform property */
+        .transform-example {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            /* Apply a rotation transformation */
+            transform:rotate(30deg);
+        }
+
+        /* Example of custom scrollbar styling */
+        .scrollbar-example {
+            width: 200px;
+            height: 150px;
+            background-color: lightcoral;
+            overflow:auto;
+            margin: 20px;
+        }     
+    </style>
+</head>
+<body>
+
+    <h2>Transform Property Example</h2>
+
+    <!-- Example of transform property -->
+    <div class="transform-example">Transform</div>
+
+    <h2>Custom Scrollbar Example</h2>
+
+    <!-- Example of custom scrollbar styling -->
+    <div class="scrollbar-example">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+        <!-- Add more content to enable scrolling -->
+    </div>
+
+</body>
+</html>
+<!--In this example:
+
+The .transform-example class applies a rotation transformation to the <div> element, making it rotate by 45 degrees.
+
+The .scrollbar-example class creates a <div> element with a custom scrollbar. The overflow: auto; property is used to make the content scrollable when it exceeds the specified height. The ::-webkit-scrollbar, ::-webkit-scrollbar-thumb, and ::-webkit-scrollbar-track pseudo-elements are used to style the scrollbar and its track in WebKit-based browsers like Chrome and Safari.
+-->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: green;
+            border: 1px solid black;
+            width: 300px;
+            height:60px;
+            position:relative;
+        }
+        .box2{
+            background-color: rgb(201, 198, 198);
+            width:250px;
+            height:25px;
+            border:1px solid black;
+            border-radius: 10px;
+            box-shadow: 1px 5px 12px 2px black;
+            margin: 7px 12px ;
+            padding: 5px 10px;
+        }
+    </style>
+    <script>
+        var min=0;var sec=0;var hr=0;var ms=0; var time=false;
+         function startw(){
+            time=true;
+            watch();
+         }
+         function stopw(){
+            time=false;
+         }
+         function watch(){
+            if(time == true){
+            ms = ms + 1;
+            if(ms == 100){
+            sec = sec + 1;
+            ms = 0;
+             }
+            if(sec == 60){
+            min = min + 1;
+            sec = 0;
+            }
+            if(min == 60 ){
+            hr = hr + 1;
+            min = 0;
+            sec = 0;
+            }
+            document.getElementById('hr').innerHTML = hr;
+            document.getElementById('min').innerHTML = min;
+            document.getElementById('sec').innerHTML = sec;
+            document.getElementById('ms').innerHTML = ms;
+            setTimeout("watch()",0.1);
+    } 
+}
+    </script>
+</head>
+<body>
+    <button onclick="startw()">start stopwatch</button>
+    <button onclick="stopw()">stop stopwatch</button><br><br>
+    <div class="box1">
+        <div class="box2">Time is
+            <span id="hr">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <span>:</span>
+            <span id="ms">00</span>
+        </div>
+    </div>
+</body>
+</html>

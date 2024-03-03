@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 1px;
+        }
+        .box0{
+             background-color: grey;
+             border: 1px solid black;
+             width: 80%;
+        }
+        .box1{
+           float:left;
+        }
+    </style>
+    <script>
+        function show(){
+        var pa = document.getElementById('pa').value;
+        var roi = document.getElementById('roi').value;
+        var time = document.getElementById('time').value;
+        var si = (pa*roi*time)/100;
+        document.getElementById('PA').innerHTML = "="+pa;
+        document.getElementById('ROI').innerHTML = "="+roi;
+        document.getElementById('Time').innerHTML = "="+time;
+        document.getElementById('SI').innerHTML = "="+si; 
+     }
+    function hide(){
+        pa.value = "";
+        roi.value = "";
+        time.value = "";
+        si = 0;
+        document.getElementById('PA').innerHTML = "="+'0';
+        document.getElementById('ROI').innerHTML = "="+'0';
+        document.getElementById('Time').innerHTML = "="+'0';
+        document.getElementById('SI').innerHTML = "="+'0';
+     }
+ 
+    </script>
+</head>
+<body>
+    <form >
+        <div class="box0">
+        <div class="box1">
+           Principle Amount</br></br>
+           Rate of Interest</br></br>
+           Time in Years</br></br>
+           <button type="button" onclick="show()">Calculated Simple Interest</button>
+        </div>
+        <div>
+            <input type="text" id="pa"/></br></br>
+            <input type="text" id="roi"/></br></br>
+            <input type="text" id="time"/></br></br>  
+            <button type="button"onclick="hide()">clear</button>
+        </div>
+        </div>
+    </form></br>
+    <div class="box0">
+       Principle Amount
+        <span id="PA"></span></br>
+        Rate of Interest
+        <span id="ROI"></span><br>
+        Time in Year
+        <span id="Time"></span><br>
+        Simple Interest is
+        <span id="SI"></span>
+    </div>
+</body>
+</html>
