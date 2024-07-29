@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0%;
+            /* font-family: cursive; */
+            padding:0%;
+        }
+        body{
+           background: linear-gradient(90deg,rgb(60, 224, 148),rgb(59, 248, 207));
+           display: flex;
+           justify-content: center;
+           background-repeat: no-repeat;
+           background-size: contain;
+        }
+        .container{
+             padding: 5%;
+             margin: 8% 20%;
+             /* border: 2px solid black; */
+            text-align: center;
+            border-radius: 25px;
+            background-color: rgb(17, 17, 17);
+            /* background-size: contain; */
+        }
+        form{
+            color: grey;
+        }
+        h1{
+             text-align: center;
+             padding-bottom: 5%;
+             padding-top: 0%;
+             color: aliceblue;
+        }
+        div{
+            margin: 1%;
+            padding: 3%;
+            font-size: 110%;
+        }
+        button{
+            border-radius: 15%;   
+            margin-top: 4%;
+            padding:2% 3%;
+            background:linear-gradient(90deg,rgb(60, 224, 148),rgb(59, 248, 207));
+            /* width:60%; */
+            padding: 3.5% 19%;
+        }
+        input{
+            font-size: 15px;
+            background-color: rgb(22, 22, 22);
+            width: 80%;
+            color: grey;
+            padding: 1.5%;
+        }
+          
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="https://script.google.com/macros/s/AKfycbzxTc9xb9nnFel3gHZnkOnU0VLk7zaUSz8T9-aRn-cOyv3EBdy1hGTbMynHs4v38CVG/exec" method="post">
+        
+       <div>
+       
+        <input type="text" placeholder="Enter Name" required name="name" spellcheck="true">
+       </div>
+    <div>
+      
+        <input type="text" placeholder="Enter Password" required name="password">
+    </div> 
+    <div>
+       Gender:<br>
+       <input type="text" name="g" list="gender" >
+       <datalist id="gender" >
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+       </datalist>
+    </div>
+    <div>
+       
+<input type="email" name="email" placeholder="Enter Email" required>
+    </div>
+    <div>
+        
+        <input type="number" required name="phone" placeholder="Enter Phone No.">
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <button type="submit" >Submit</button>
+    </div>
+</form>      
+    </div>
+
+    
+</body>
+
+</html>
